@@ -25,7 +25,7 @@ Lets run through the demo
 * Make sure minikube start fresh with `minikube delete`
 * Create a new minikube cluster `01_minikube.sh`
 * So we have our cluster up and running and it is configured to accept oidc tokens from our IdP, how do we generate the tokens?
-* We need to run dex - our own IdP witht we use with GitHub connector
+* We need to run dex - our own IdP which we use with GitHub connector
 * Run `02_deploy_dex.sh`
 * We need to run the dashboard with our openresty container in front of it. That container needs to know the client id and secret that we created in DEX
 * Now we deploy our dashboard pod with `03_deploy_dashboard.sh`
