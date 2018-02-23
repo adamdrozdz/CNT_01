@@ -20,7 +20,7 @@ Lets run through the demo
 	 export CLIENT_SECRET=proxy
 	 export GITHUB_CLIENT_ID=client_id_from_github_oauth_app
 	 export GITHUB_CLIENT_SECRET=client_secret_from_github_oauth_app
-	 
+	 ```
 
 * Make sure minikube start fresh with `minikube delete`
 * Create a new minikube cluster `01_minikube.sh`
@@ -36,13 +36,13 @@ Lets run through the demo
 	```
 	roles/role0.yaml
 	roles/role1.yaml
-
+	```
 * If we deploy some roles
 
  
  	```
 	kubectl create -f roles/role0.yaml 
-		or
+	or
  	kubectl create -f roles/role1.yaml
  	```
   and after that we refresh dashboard, then things should start working
