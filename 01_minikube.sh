@@ -15,7 +15,7 @@ minikube start \
   --extra-config apiserver.Authentication.OIDC.IssuerURL=https://192.168.99.100:32001 \
   --extra-config apiserver.Authentication.OIDC.UsernameClaim=email \
   --extra-config apiserver.Authentication.OIDC.GroupsClaim=groups \
-  --extra-config apiserver.Authentication.OIDC.CAFile=/Users/adamdrozdz/.minikube/ca.crt \
+  --extra-config apiserver.Authentication.OIDC.CAFile=/var/lib/localkube/certs/ca.crt \
   --memory 4096 \
   --cpus 4
 
